@@ -9,7 +9,7 @@ syn match sslangFunction "[a-zA-Z][a-zA-Z0-9_]*" contained
 syn match sslangNumber '\<[+-]\=\d\+\>'
 
 syn match sslangComment "//.*$"
-syn region sslangComment start="/*" end="*/" extend
+syn region sslangComment start="/\*" end="\*/" extend
 
 syn region sslangString start='"' skip=/\v\\./ end='"'
 syn region sslangString start="'" skip=/\v\\./ end="'"
